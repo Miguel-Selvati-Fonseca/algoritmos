@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miguel.selvati"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 05:10:21 "/>
+        <attribute name="created" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA2OyIwNDo0NTo1NyAiOzI5MDk="/>
+        <attribute name="edited" value="bWlndWVsLnNlbHZhdGk7TlQyMzsyMDI0LTAzLTA2OyIwNToxMDoyMSAiOzE7MzAwMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ind" type="Integer" array="False" size=""/>
+            <declare name="plvr, td" type="String" array="False" size=""/>
+            <input variable="plvr"/>
+            <for variable="ind" start="0" end="len(plvr)-1" direction="inc" step="1">
+                <if expression="plvr==&quot;a&quot; || &quot;A&quot;">
+                    <then>
+                        <assign variable="ind" expression="ind+1"/>
+                    </then>
+                    <else>
+                        <if expression="plvr==&quot;u&quot; || &quot;U&quot;">
+                            <then>
+                                <assign variable="ind" expression="ind+1"/>
+                            </then>
+                            <else>
+                                <if expression="plvr==&quot;e&quot; || &quot;E&quot;">
+                                    <then>
+                                        <assign variable="ind" expression="ind+1"/>
+                                    </then>
+                                    <else>
+                                        <if expression="plvr==&quot;i&quot; || &quot;I&quot;">
+                                            <then>
+                                                <assign variable="ind" expression="ind+1"/>
+                                            </then>
+                                            <else>
+                                                <if expression="plvr==&quot;o&quot; || &quot;O&quot;">
+                                                    <then>
+                                                        <assign variable="ind" expression="ind+1"/>
+                                                    </then>
+                                                    <else/>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="ind" expression="td"/>
+            </for>
+            <output expression="td" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
